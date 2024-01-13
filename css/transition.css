@@ -1,0 +1,9 @@
+/* Add styles for the transition effect */
+#page-container {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0; /* Start with content hidden */
+}
+
+#page-container.fade-in {
+    opacity: 1; /* Display content with fade-in effect */
+}

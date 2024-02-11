@@ -978,6 +978,61 @@ button:hover {
     }
 }
 
+.container {
+    padding: 20px;
+}
+
+.resume-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resume-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.resume-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-section li {
+    margin-bottom: 15px;
+}
+
+.resume-section h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.resume-section p {
+    margin: 0;
+    color: #777;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .resume-columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume-column {
+        margin-right: 0;
+        margin-bottom: 30px;
+        
+    }
+
+    .social-links {
+        text-align: center;
+    }
+}
 
 
 .social-media a {
@@ -1000,3 +1055,44 @@ button:hover {
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
   }
+  #showcasingText{
+    font-size: 26px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .resume-section h3,
+    .resume-section h4,
+    .resume-section p {
+        font-size: 0.8em;
+    }
+    .resume-section {
+        padding: 5px;
+    }
+    .resume-column {
+        margin-bottom: 10px; /* Add some bottom margin between columns */
+        padding: 5px;
+        flex-basis: calc(50% - 10px); /* Make columns half width minus spacing */
+        margin-right: 20px; /* Adjust right margin */
+    }
+    .resume-columns {
+        flex-direction: row;
+        padding: 5px; /* Ensure columns remain side by side on smaller devices */
+    }
+    section#aboutme {
+        height: 140vh; /* Increase height to 100% of viewport height for smaller devices */
+    }
+    section#projects{
+        height: 110vh;
+    }
+    .container {
+        padding: 3px;
+    }
+    #hero h2 {
+        font-size: 30px;
+    }
+    #showcasingText{
+        font-size: 20px;
+    }
+}
+

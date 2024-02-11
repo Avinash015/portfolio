@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadhav Avinash - Portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:400,700">
-    <link rel="stylesheet" href="css/transition.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script >
+   document.addEventListener('DOMContentLoaded', function() {
+    const textContainer = document.getElementById('showcasingText');
+    const text = "showcasing my skills and projects";
+    let index = 0;
+
+    function displayText() {
+        if (index < text.length) {
+            textContainer.textContent += text[index];
+            index++;
+
+            // Adjust text size
+            textContainer.style.fontSize = '26px'; // Adjust the font size as needed
+
+            // Add shadow effect
+            textContainer.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)'; // Adjust shadow properties as needed
+
+            setTimeout(displayText, 50); // Adjust the time delay as needed
+        }
+    }
+
+    displayText();
+});
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to handle smooth scrolling with offset
+    function scrollToElementWithOffset(elementId, offset) {
+        const element = document.getElementById(elementId);
+        const offsetPosition = element.offsetTop - offset;
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+
+    // Event listeners for the navigation buttons
+    const navButtons = document.querySelectorAll(".nav-link");
+    navButtons.forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const targetId = button.getAttribute("onclick").match(/#(\w+)/)[1]; // Extract the target section id from the onclick attribute
+            scrollToElementWithOffset(targetId, 120); // Scroll to the target section with a 200px offset
+        });
+    });
+});
+
+
+</script>
 </head>
 <body>
 
@@ -38,9 +85,9 @@
     <nav>
         <ul>
             <li><button class="glow-on-hover nav-link" onclick="location.href='#hero'">Home</button></li>
-            <li><button class="glow-on-hover nav-link" onclick="location.href='#resume'">Resume</button></li>
+            <li><button class="glow-on-hover nav-link" onclick="location.href='#aboutme'">AboutMe</button></li>
             <li><button class="glow-on-hover nav-link" onclick="location.href='#skills'">skills</button></li>
-            <li><button class="glow-on-hover nav-link" onclick="location.href='#education'">education</button></li>
+            <li><button class="glow-on-hover nav-link" onclick="location.href='#cirtifications'">cirtifications</button></li>
             <li><button class="glow-on-hover nav-link" onclick="location.href='#projects'">Projects</button></li>
             <li><button class="glow-on-hover nav-link" onclick="location.href='#contact'">Contact</button></li>
         </ul>
@@ -50,25 +97,71 @@
     <!-- Hero section with a welcome message -->
     <section id="hero" id="page-content" style="background-color: #98c1d9; color: #000;">
         <h2>Welcome to My Portfolio</h2>
-        <p>Showcasing my skills and projects</p>
+        <h3 id="showcasingText" ></h3>
     </section>
 
-    <!-- Resume section -->
-    <section id="resume" style="background-color: #e0fbfc; color: #000;">
-        <h2>Resume</h2>
-        <div class="professional-experience">
-            <!-- Professional Experience content goes here -->
+<!-- Resume section -->
+<section id="aboutme" style="background-color: #e0fbfc; color: #000;">
+    <div class="container">
+        <h2>aboutme</h2>
+        <div class="resume-columns">
+            <div class="resume-column">
+                <div class="professional-experience resume-section">
+                    <p class="resume-text">
+                        Enthusiastic and driven student at MVSR College, fueled by a profound love for learning and an unwavering ambition to achieve excellence. Passionate about exploring new horizons, I actively seek opportunities to broaden my knowledge and refine my skills. With each challenge embraced as a chance to evolve, I am committed to continuous growth in my academic journey.
+                    </p>
+                </div>
+                <div class="social-links resume-section social-media">
+                    
+                    <a href="https://www.linkedin.com/in/jadhav-avinash-292716227/">
+                        <i class='bx bxl-linkedin' ></i></a>
+                    </a>
+                    <a href="https://github.com/Avinash015">
+                        <i class='bx bxl-github' ></i></a>
+                    </a>
+                    <!-- Add more social links as needed -->
+                </div>
+                <div class="resume-section">
+                    <h2>find my resume here:</h2>
+                </div>
+                
+                
+                
+            </div>
+            <div class="resume-column">
+                <div class="education resume-section">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>
+                            <h4>B.Tech in Computer Science and Engineering</h4>
+                            <p>Maturi Venkata Subba Rao Engineering College</p>
+                            <p>Nadergul, Hyderabad, 501510</p>
+                            <p>Expected Graduation Date: 2025</p>
+                            <p>GPA: 9.24 (as of 3rd Year, 1st Semester)</p>
+                        </li>
+                        <li>
+                            <h4>Intermediate (12th Grade)</h4>
+                            <p>Vijetha Junior College</p>
+                            <p>Bodhan, Nizamabad, 503185</p>
+                            <p>Year of Completion: 2020</p>
+                            <p>Percentage: 98.2%</p>
+                        </li>
+                        <li>
+                            <h4>Secondary School Certificate (SSC) (10th Grade)</h4>
+                            <p>Sri Sai Prasanna High School</p>
+                            <p>Bodhan, Nizamabad, 503185</p>
+                            <p>Year of Completion: 2018</p>
+                            <p>Percentage: 92%</p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
         </div>
-        <div class="education">
-            <!-- Education content goes here -->
-        </div>
-        <div class="certifications">
-            <!-- Certifications content goes here -->
-        </div>
-        <div class="skills">
-            <!-- Skills content goes here -->
-        </div>
-    </section>
+    </div>
+</section>
+
+
 
     <!-- Skills section -->
     <section id="skills" style="background-color: #e9c46a; color: #000;">
@@ -82,11 +175,9 @@
     </section>
 
     <!-- Education section -->
-    <section id="education" style="color: #000;">
-        <h2>Education</h2>
-        <p>Degree: Your Degree</p>
-        <p>University: Your University</p>
-        <p>Graduation Date: Your Graduation Date</p>
+    <section id="cirtifications" style="color: #000;">
+        <h2>cirtifications</h2>
+        
         <br><br><br><br><br><br>
     </section>
 

@@ -1067,7 +1067,7 @@ button:hover {
         font-size: 0.8em;
     }
     .resume-section {
-        padding: 5px;
+        padding: 10px;
     }
     .resume-column {
         margin-bottom: 10px; /* Add some bottom margin between columns */
@@ -1080,7 +1080,7 @@ button:hover {
         padding: 5px; /* Ensure columns remain side by side on smaller devices */
     }
     section#aboutme {
-        height: 140vh; /* Increase height to 100% of viewport height for smaller devices */
+        height: 145vh; /* Increase height to 100% of viewport height for smaller devices */
     }
     section#projects{
         height: 110vh;

@@ -677,7 +677,7 @@ section {
 #projects {
     color: #fff; /* Text color */
     width: 100%;
-    height: 350%;
+    height: 320%;
 }
 
 .project-container {
@@ -1278,3 +1278,179 @@ button:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+svg {
+    width: 114px;
+    height: 114px;
+    margin: 1em;
+}
+
+.bg {
+    fill: none;
+    stroke-width: 10px;
+    stroke: #1A2C34;
+}
+
+[class^="meter-"] {
+    fill: none;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+.meter-html {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    stroke: aqua;
+    animation: progress-html 1s ease-out;
+}
+
+.meter-js {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    stroke: lime;
+    animation: progress-js 1s ease-out;
+}
+
+.meter-css {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    stroke: blueviolet;
+    animation: progress-css 1s ease-out;
+}
+
+.meter-c-cpp {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    stroke: yellow;
+    animation: progress-c-cpp 1s ease-out;
+}
+
+.meter-java {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    stroke: orange;
+    animation: progress-java 1s ease-out;
+}
+
+.meter-python {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    stroke: red;
+    animation: progress-python 1s ease-out;
+}
+
+.meter-angular {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 160;
+    stroke: cyan;
+    animation: progress-angular .75s ease-out;
+}
+
+.meter-react {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 160;
+    stroke: magenta;
+    animation: progress-react .75s ease-out;
+}
+
+.meter-xml {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 238;
+    stroke: yellowgreen;
+    animation: progress-xml .67s ease-out;
+}
+
+@keyframes progress-html {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes progress-js {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes progress-css {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes progress-c-cpp {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes progress-java {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes progress-python {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes progress-angular {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 160;
+    }
+}
+
+@keyframes progress-react {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 160;
+    }
+}
+
+@keyframes progress-xml {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 238;
+    }
+}
+.text {
+    font-size: 16px;
+    fill: white;
+    text-anchor: middle;
+}

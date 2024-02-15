@@ -1015,6 +1015,24 @@ section {
         background-color: #2980b9;
     }
     
+
+    #skills{
+        height: 140%;
+    }
+    #projects .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects .project-column {
+        margin-bottom: 20px;
+    }
+
+    #projects .project {
+        width: 100%;
+        margin-bottom: 20px;
+    }
     /* Contact Form styling */
     form {
         max-width: 600px;
@@ -1453,4 +1471,22 @@ svg {
     font-size: 16px;
     fill: white;
     text-anchor: middle;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #projects .project-container {
+        display: -moz-grid-line;
+        flex-direction: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #projects .project {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }

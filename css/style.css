@@ -1485,4 +1485,7 @@ svg {
         width: 90%;
         margin-bottom: 20px;
     }
+    section{
+        width: 100%;
+    }
 }

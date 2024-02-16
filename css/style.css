@@ -32,7 +32,7 @@ header {
     position: fixed;
     text-align: center;
     height: 10%;
-    top:33px;
+    top:20px;
     order: 1;
     transform: translateY(-50%);
 }
@@ -448,9 +448,6 @@ section {
 
 
 
-.container {
-    padding: 20px;
-}
 
 .resume-section {
     margin-bottom: 30px;
@@ -547,9 +544,6 @@ section {
 }
 
 
-.container {
-    padding: 20px;
-}
 
 .resume-section {
     background-color: #fff;
@@ -609,7 +603,9 @@ section {
   #showcasingText{
     font-size: 26px;
 }
-
+#aboutme{
+    height: 130%;
+}
 
 
 /* CSS for projects section */

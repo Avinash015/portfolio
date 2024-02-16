@@ -1475,7 +1475,7 @@ svg {
 
 @media screen and (max-width: 768px) {
     #projects .project-container {
-        display: -moz-grid-line;
+        display: table-column-group;
         flex-direction: auto;
         align-items: center;
         justify-content: center;
